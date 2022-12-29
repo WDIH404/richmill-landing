@@ -1,11 +1,43 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 body {
@@ -324,4 +356,67 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 16px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.button-primary {
+  background-color: #ff5555;
+  color: white;
+}
+.button-secondary {
+  color: #ff5555;
+  background-color: #fff2f2;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content .nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-content .nav__link {
+  color: #272d4e;
+}
+
+.hero__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9fb0c6;
+  margin-bottom: 30px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 100%;
+  color: #272d4e;
+  max-width: 740px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #617185;
+  margin-bottom: 30px;
+}
+.hero .button-primary {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */

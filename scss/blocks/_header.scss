@@ -1,0 +1,64 @@
+.button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 16px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  &-primary {
+    background-color: #ff5555;
+    color: white;
+  }
+  &-secondary {
+    color: #ff5555;
+    background-color: #fff2f2;
+  }
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      &__link {
+        color: #272d4e;
+      }
+    }
+  }
+}
+
+.hero {
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9fb0c6;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 100%;
+    color: #272d4e;
+    max-width: 740px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #617185;
+    margin-bottom: 30px;
+  }
+  .button-primary {
+    margin-right: 20px;
+  }
+}
