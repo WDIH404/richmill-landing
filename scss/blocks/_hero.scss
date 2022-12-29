@@ -1,0 +1,30 @@
+.hero {
+  margin-bottom: 150px;
+  &__pretitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9fb0c6;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 100%;
+    color: #272d4e;
+    max-width: 740px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #617185;
+    margin-bottom: 30px;
+  }
+  .button-primary {
+    margin-right: 20px;
+  }
+}

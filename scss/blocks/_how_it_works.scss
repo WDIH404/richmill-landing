@@ -1,0 +1,47 @@
+.how_it_works {
+  .hit-wrapper {
+    .description {
+      text-align: left;
+    }
+    .title {
+      text-align: left;
+    }
+    .steps {
+      &__item {
+        display: flex;
+        align-items: center;
+      }
+      &__number {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 100%;
+        text-align: center;
+        color: #272d4e;
+        margin-right: 30px;
+      }
+      &__info {
+
+      }
+      &__secondary {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #c5d1e1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      &__primary {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #272d4e;
+        align-items: center;
+        display: flex;
+      }
+      &__icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}

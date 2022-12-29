@@ -4,8 +4,20 @@
 //Подключение normalize.css
 @import "normalize";
 
-// Подключение хедера
+// Подключение header
 @import "blocks/header.scss";
+
+// Подключение hero
+@import "blocks/hero.scss";
+
+// Подключение counters
+@import "blocks/counters.scss";
+
+// Подключение about
+@import "blocks/about.scss";
+
+// Подключение how_it_works
+@import "blocks/how_it_works.scss";
 
 // Подключение стилей для адаптива
 @import "media";

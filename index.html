@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-content">
+        <div class="header-wrapper">
           <ul class="nav">
             <img src="./img/logo.svg" alt="Logotype" class="header__logo" />
             <li><a href="" class="nav__link">О сервисе</a></li>
@@ -25,11 +25,125 @@
     </header>
     <section class="hero">
       <div class="container">
-        <div class="hero__description">Партнерская программа RICHMILL</div>
-        <h1 class="hero__title">Легкий старт вашего бизнеса на маркетплейсах</h1>
-        <div class="hero__text">Инновационный B2B сервис для работы на маркетплейсе</div class="hero__text">
-        <button class="button button-primary">Присоединиться</button>
-        <button class="button button-secondary">Узнать подробнее</button>
+        <div class="hero_wrapper">
+          <div class="hero__pretitle">Партнерская программа RICHMILL</div>
+          <h1 class="hero__title">Легкий старт вашего бизнеса на маркетплейсах</h1>
+          <div class="hero__subtitle">Инновационный B2B сервис для работы на маркетплейсе</div>
+          <button class="button button-primary">Присоединиться</button>
+          <button class="button button-secondary">Узнать подробнее</button>
+        </div>
+      </div>
+    </section>
+    <section class="counters">
+      <div class="container">
+        <div class="counters_wrapper">
+          <div class="description">Показатели сервиса</div>
+          <div class="title">Наш сервис - ваш успех на стартах продаж</div>
+          <div class="counters_items">
+            <div class="item">
+              <div class="item__image">
+                <img src="./img/users.svg" alt="Users" class="item__icon" />
+              </div>
+              <div class="info">
+                <div class="info__value">1 355</div>
+                <div class="info__label">Пользователей сервиса</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__image">
+                <img src="./img/users.svg" alt="Users" class="item__icon" />
+              </div>
+              <div class="info">
+                <div class="info__value">19 137</div>
+                <div class="info__label">Общее количество сделок</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__image">
+                <img src="./img/users.svg" alt="Users" class="item__icon" />
+              </div>
+              <div class="info">
+                <div class="info__value">1 395 144</div>
+                <div class="info__label">Сумма продаж пользователей</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about_wrapper">
+          <div class="description">Информация</div>
+          <div class="title">О сервисе</div>
+          <div class="about_top">
+            <div class="about__image">
+              <img src="/img/image_top.png" alt="Photo" />
+            </div>
+            <div class="top_content">
+              <h3 class="top__subtitle">Объединяем производителей и продавцов</h3>
+              <p class="top__text">
+                Меняем привычные традиции ведения бизнеса с заморозкой денег в товарных остатках и
+                долгими циклами сделок. Меняем привычные традиции ведения бизнеса с заморозкой денег
+                в товарных остатках и долгими циклами сделок. Меняем привычные традиции ведения
+                бизнеса с заморозкой денег в товарных остатках и долгими циклами сделок. Меняем
+                привычные традиции ведения бизнеса с заморозкой денег в товарных остатках и долгими
+                циклами сделок.
+              </p>
+            </div>
+          </div>
+          <div class="about_bottom">
+            <div class="bot_content">
+              <h3 class="bot__subtitle">Объединяем производителей и продавцов</h3>
+              <p class="bot__text">
+                Меняем привычные традиции ведения бизнеса с заморозкой денег в товарных остатках и
+                долгими циклами сделок. Меняем привычные традиции ведения бизнеса с заморозкой денег
+                в товарных остатках и долгими циклами сделок. Меняем привычные традиции ведения
+                бизнеса с заморозкой денег в товарных остатках и долгими циклами сделок.
+              </p>
+              <button class="button button-primary">Присоединиться</button>
+            </div>
+            <div class="about__image">
+              <img src="/img/image_bot.png" alt="Photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how_it_works">
+      <div class="container">
+        <div class="hit-wrapper">
+          <div class="description">Работе на платформе</div>
+          <div class="title">Как это работает?</div>
+          <div class="steps">
+            <div class="steps__item">
+              <h4 class="steps__number">1</h4>
+              <div class="steps__info">
+                <div class="steps__secondary">
+                  <img src="/img/cross.svg" alt="Cross" class="steps__icon" />
+                  <div class="steps__label">Продавец заключает с производством сделку</div>
+                </div>
+                <div class="steps__primary">
+                  <img src="/img/check.svg" alt="Check" class="steps__icon" />
+                  <div class="steps__label">Продавец заходит на платформу «RICHMILL»</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item">
+              <h4 class="steps__number">2</h4>
+              <div class="steps__info">
+                <div class="steps__secondary">
+                  <img src="/img/cross.svg" alt="Cross" class="steps__icon" />
+                  <div class="steps__label">Оплачивает партию, замораживая деньги</div>
+                </div>
+                <div class="steps__primary">
+                  <img src="/img/check.svg" alt="Check" class="steps__icon" />
+                  <div class="steps__label">Выбирает товар</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
