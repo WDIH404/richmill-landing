@@ -19,5 +19,17 @@
 // Подключение how_it_works
 @import "blocks/how_it_works.scss";
 
+// Подключение advantages
+@import "blocks/advantages.scss";
+
+// Подключение team
+@import "blocks/team.scss";
+
+//Подключение form
+@import "blocks/form.scss";
+
+// Подключение footer
+@import "blocks/footer.scss";
+
 // Подключение стилей для адаптива
 @import "media";

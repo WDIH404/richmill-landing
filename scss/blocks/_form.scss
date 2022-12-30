@@ -1,0 +1,43 @@
+.form {
+  background: #fafcff;
+  padding: 150px 0;
+  .title {
+    margin-bottom: 30px;
+  }
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #54667c;
+    margin-bottom: 20px;
+  }
+  .request {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+    .input {
+      padding: 16px 22px;
+      background: #ffffff;
+      border: 1px solid #bac8d8;
+      border-radius: 12px;
+      min-width: 300px;
+      font-weight: 500;
+      color: #272D4E;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #d6d6d6;
+      }
+    }
+  }
+  .alert {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #c5d1e1;
+  }
+}

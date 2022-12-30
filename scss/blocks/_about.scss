@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 80px;
+    margin-left: 110px;
     .top {
       &__subtitle {
         font-weight: 600;
@@ -44,6 +45,8 @@
   &_bottom {
     display: flex;
     align-items: center;
+    justify-content: end;
+    margin-right: 110px;
     .bot {
       &__subtitle {
         font-weight: 600;
@@ -63,6 +66,22 @@
       }
       &_content {
         margin-right: 50px;
+      }
+    }
+    .about__image {
+      position: relative;
+      z-index: 3;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 190px;
+        height: 290px;
+        background: #fff2f2;
+        bottom: -20px;
+        right: -20px;
+        z-index: -1;
+        border-radius: 20px;
       }
     }
   }

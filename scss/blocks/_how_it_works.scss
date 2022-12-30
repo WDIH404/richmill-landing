@@ -1,15 +1,26 @@
 .how_it_works {
+  margin-bottom: 150px;
   .hit-wrapper {
-    .description {
+    .pretitle {
       text-align: left;
     }
     .title {
       text-align: left;
     }
     .steps {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
       &__item {
         display: flex;
         align-items: center;
+        width: 630px;
+      }
+      &__line {
+        flex-basis: 100%;
+        height: 1px;
+        width: 1290px;
+        background-color: #EAF0F7;
       }
       &__number {
         font-weight: 700;
@@ -18,9 +29,6 @@
         text-align: center;
         color: #272d4e;
         margin-right: 30px;
-      }
-      &__info {
-
       }
       &__secondary {
         font-weight: 400;
