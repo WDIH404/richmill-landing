@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/accordion.css" />
   </head>
   <body>
     <header class="header">
@@ -244,6 +245,56 @@
         </div>
       </div>
     </section>
+    <section class="faq">
+      <div class="container">
+        <div class="faq-wrapper">
+          <div class="pretitle">FAQ</div>
+          <div class="title">Ответы на часто задаваемые вопросы</div>
+          <ul id="my-accordion" class="accordionjs">
+            <li>
+              <div>А если я хочу отшить собственный товар по своему дизайну?</div>
+              <div>
+                Мы постоянно отшиваем и пополняем остатки на складе готовой продукции. Собственное
+                производство позволяет нам полностью контролировать процесс изготовления и
+                прогнозировать спрос. На отгрузку на данный момент предусмотрено 72 часа.
+              </div>
+            </li>
+            <li>
+              <div>Я волнуюсь, что будет конкуренция по одинаковому товару</div>
+              <div>
+                Мы постоянно отшиваем и пополняем остатки на складе готовой продукции. Собственное
+                производство позволяет нам полностью контролировать процесс изготовления и
+                прогнозировать спрос. На отгрузку на данный момент предусмотрено 72 часа.
+              </div>
+            </li>
+            <li>
+              <div>Что нужно, чтобы начать?</div>
+              <div>
+                Мы постоянно отшиваем и пополняем остатки на складе готовой продукции. Собственное
+                производство позволяет нам полностью контролировать процесс изготовления и
+                прогнозировать спрос. На отгрузку на данный момент предусмотрено 72 часа.
+              </div>
+            </li>
+            <li>
+              <div>Если товар не будет вовремя отгружен?</div>
+              <div>
+                Мы постоянно отшиваем и пополняем остатки на складе готовой продукции. Собственное
+                производство позволяет нам полностью контролировать процесс изготовления и
+                прогнозировать спрос. На отгрузку на данный момент предусмотрено 72 часа.
+              </div>
+            </li>
+            <li>
+              <div>Сколько стоят ваши услуги по упаковке и отгрузке?</div>
+              <div>
+                Мы постоянно отшиваем и пополняем остатки на складе готовой продукции. Собственное
+                производство позволяет нам полностью контролировать процесс изготовления и
+                прогнозировать спрос. На отгрузку на данный момент предусмотрено 72 часа.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="team">
       <div class="container">
         <div class="team-wrapper">
@@ -343,5 +394,30 @@
         </div>
       </div>
     </footer>
+    <script src="/js/jquery-3.6.3.min.js"></script>
+    <script src="/js/accordion.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $('#my-accordion').accordionjs({
+          // Allow self close.(data-close-able)
+          closeAble: false,
+
+          // Close other sections.(data-close-other)
+          closeOther: true,
+
+          // Animation Speed.(data-slide-speed)
+          slideSpeed: 250,
+
+          // The section open on first init. A number from 1 to X or false.(data-active-index)
+          activeIndex: 1,
+
+          // Callback when a section is open
+          openSection: function (section) {},
+
+          // Callback before a section is open
+          beforeOpenSection: function (section) {},
+        });
+      });
+    </script>
   </body>
 </html>
