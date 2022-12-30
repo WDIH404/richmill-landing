@@ -38,14 +38,6 @@
   line-height: 1;
   margin: 5px 0;
 }
-.accordionjs .acc_section .acc_content {
-}
-.accordionjs .acc_section:first-of-type,
-.accordionjs .acc_section:first-of-type .acc_head {
-}
-.accordionjs .acc_section:last-of-type,
-.accordionjs .acc_section:last-of-type .acc_content {
-}
 .accordionjs .acc_section.acc_active > .acc_content {
   display: block;
   position: relative;
