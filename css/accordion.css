@@ -33,6 +33,11 @@
   font-size: 25px;
   line-height: 100%;
   color: #272d4e;
+  transition: color .2s ease-in-out;
+}
+
+.accordionjs .acc_section .acc_head:hover {
+  color:#ff5555;
 }
 .accordionjs .acc_section .acc_head h3 {
   line-height: 1;
@@ -56,7 +61,14 @@
   position: absolute;
   left: -15px;
   border-radius: 10px;
+  animation: ani 1.5s forwards;
 }
+
+@keyframes ani {
+  0% {height: 0%;}
+  100% {height: 100%;}
+}
+
 .accordionjs .acc_section.acc_active > .acc_head {
   color: #ff5555;
   margin-bottom: 20px;

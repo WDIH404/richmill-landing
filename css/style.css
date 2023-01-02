@@ -371,10 +371,19 @@ template {
 .button-primary {
   background-color: #ff5555;
   color: white;
+  transition: all 0.2s ease-in-out;
+}
+.button-primary:hover {
+  background: #EF4C4C;
 }
 .button-secondary {
   color: #ff5555;
   background-color: #fff2f2;
+  transition: all 0.2s ease-in-out;
+}
+.button-secondary:hover {
+  background: #ff5555;
+  color: white;
 }
 
 .header {
@@ -396,6 +405,30 @@ template {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.header-wrapper .nav__link::after {
+  content: "";
+  display: block;
+  background: #ff5555;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  transition: all 0.3s ease-in-out;
+}
+.header-wrapper .nav__link:hover {
+  color: #ff5555;
+}
+.header-wrapper .nav__link:hover::after {
+  content: "";
+  display: block;
+  background: #ff5555;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
 }
 
 .hero {
@@ -416,6 +449,12 @@ template {
   color: #272d4e;
   max-width: 740px;
   margin-top: 0;
+  margin-bottom: 6px;
+}
+.hero .primary {
+  color: #FF5555;
+}
+.hero .title-wrapper {
   margin-bottom: 30px;
 }
 .hero__subtitle {
@@ -732,7 +771,7 @@ template {
   font-size: 18px;
   line-height: 150%;
   color: #617185;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .team .cards .small .cards__image img {
   width: 300px;
@@ -745,10 +784,37 @@ template {
   background: none;
   padding: 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   text-decoration-line: underline;
   color: #ff5555;
+  position: relative;
+}
+.team .button-link::after {
+  content: "";
+  display: block;
+  background-image: url(../../img/arrow.svg);
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -18px;
+  top: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.team .button-link:hover::after {
+  content: "";
+  display: block;
+  background-image: url(../../img/arrow.svg);
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -40px;
+  top: 6px;
+  opacity: 0%;
 }
 
 .form {

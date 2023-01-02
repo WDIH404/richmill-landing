@@ -41,7 +41,7 @@
       font-size: 18px;
       line-height: 150%;
       color: #617185;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .small {
       .cards {
@@ -61,9 +61,38 @@
     background: none;
     padding: 0;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     text-decoration-line: underline;
     color: #ff5555;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../../img/arrow.svg);
+      width: 14px;
+      height: 14px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: -18px;
+      top: 6px;
+      transition: all .3s ease-in-out;
+    }
+    &:hover {
+      &::after {
+        content: "";
+        display: block;
+        background-image: url(../../img/arrow.svg);
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: -40px;
+        top: 6px;
+        opacity: 0%;
+      }
+    }
   }
 }
