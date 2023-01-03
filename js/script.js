@@ -6,7 +6,7 @@ $(window).scroll(function () {
       scrolled = true;
       $(function () {
         $({ numberValue: 0 }).animate(
-          { numberValue: 57 },
+          { numberValue: 675 },
           {
             duration: 1000,
             easing: 'linear',
@@ -20,7 +20,7 @@ $(window).scroll(function () {
 
       $(function () {
         $({ numberValue: 0 }).animate(
-          { numberValue: 19135 },
+          { numberValue: 1913 },
           {
             duration: 2000,
             easing: 'linear',
@@ -34,7 +34,7 @@ $(window).scroll(function () {
 
       $(function () {
         $({ numberValue: 0 }).animate(
-          { numberValue: 3395144 },
+          { numberValue: 2025000 },
           {
             duration: 3000,
             easing: 'linear',
