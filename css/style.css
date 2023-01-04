@@ -507,7 +507,9 @@ template {
   border-radius: 12px;
   margin-right: 20px;
 }
-.counters_items .item .info__value {
+.counters_items .item .info .counter-count {
+  font-family: "Gilroy";
+  text-align: left;
   font-weight: 700;
   font-size: 35px;
   line-height: 100%;

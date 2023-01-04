@@ -23,8 +23,8 @@
     display: flex;
     justify-content: space-between;
     .item {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
       &__image {
         padding: 20px;
         background-color: #fff2f2;
@@ -34,19 +34,21 @@
         margin-right: 20px;
       }
       .info {
-        &__value {
-            font-weight: 700;
-            font-size: 35px;
-            line-height: 100%;
-            color: #272d4e;
-            margin-bottom: 5px;
-          }
-          &__label {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 150%;
-            color: #54667c;
-          }
+        .counter-count {
+          font-family: 'Gilroy';
+          text-align: left;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 100%;
+          color: #272d4e;
+          margin-bottom: 5px;
+        }
+        &__label {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: #54667c;
+        }
       }
     }
   }

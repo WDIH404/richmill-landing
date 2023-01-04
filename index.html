@@ -50,7 +50,14 @@
                 <img src="./img/users.svg" alt="Users" class="item__icon" />
               </div>
               <div class="info">
-                <div class="info__value" id="counter_item1">0</div>
+                <span
+                  class="counter counter-default"
+                  data-decimal-delimiter=" "
+                  data-thousand-delimiter=" "
+                  data-duration="1500"
+                >
+                  <kbd class="counter-count">675</kbd>
+                </span>
                 <div class="info__label">Пользователей</div>
               </div>
             </div>
@@ -59,7 +66,14 @@
                 <img src="./img/basket.svg" alt="Users" class="item__icon" />
               </div>
               <div class="info">
-                <div class="info__value" id="counter_item2">0</div>
+                <span
+                  class="counter counter-default"
+                  data-decimal-delimiter=" "
+                  data-thousand-delimiter=" "
+                  data-duration="2000"
+                >
+                  <kbd class="counter-count">1913</kbd>
+                </span>
                 <div class="info__label">Сделок</div>
               </div>
             </div>
@@ -68,7 +82,14 @@
                 <img src="./img/coins.svg" alt="Users" class="item__icon" />
               </div>
               <div class="info">
-                <div class="info__value" id="counter_item3">0</div>
+                <span
+                  class="counter counter-default"
+                  data-decimal-delimiter=" "
+                  data-thousand-delimiter=" "
+                  data-duration="3000"
+                >
+                  <kbd class="counter-count">2025000</kbd>
+                </span>
                 <div class="info__label">Средний оборот пользователя</div>
               </div>
             </div>
@@ -395,6 +416,7 @@
     </footer>
     <script src="/js/jquery-3.6.3.min.js"></script>
     <script src="/js/accordion.min.js"></script>
+    <script src="/js/jquery.countimator.min.js"></script>
     <script>
       jQuery(document).ready(function ($) {
         $('#my-accordion').accordionjs({
