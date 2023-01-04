@@ -493,11 +493,12 @@ template {
 }
 .counters_items {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .counters_items .item {
   display: flex;
   align-items: center;
+  width: 410px;
 }
 .counters_items .item__image {
   padding: 20px;
