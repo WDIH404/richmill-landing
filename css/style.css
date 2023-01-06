@@ -44,7 +44,6 @@ button {
 
 body {
   outline: none;
-  cursor: url("../img/cursor.png"), auto;
 }
 
 .container {
@@ -701,35 +700,53 @@ template {
   display: flex;
   align-items: center;
 }
-.advantages__image {
-  margin-right: 50px;
-  position: relative;
+.advantages .gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  height: 100%;
 }
-.advantages__image::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 190px;
-  height: 430px;
-  background: #fff2f2;
-  bottom: -20px;
-  left: -20px;
-  z-index: -1;
+.advantages .gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 }
-.advantages__info .pretitle {
-  text-align: left;
+.advantages .gallery img:hover {
+  transform: scale(105%);
 }
-.advantages__info .title {
-  text-align: left;
-  margin-bottom: 30px;
+.advantages .gallery .item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
 }
-.advantages__info .description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: #54667c;
-  margin-bottom: 30px;
+.advantages .gallery .item-1 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
+}
+.advantages .gallery .item-2 {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 4;
+  grid-column-end: 7;
+}
+.advantages .gallery .item-3 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 5;
+}
+.advantages .gallery .item-4 {
+  grid-row-start: 4;
+  grid-column-start: 5;
+  grid-row-end: 5;
+  grid-column-end: 7;
 }
 
 .faq {
