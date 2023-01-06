@@ -390,6 +390,9 @@ template {
   margin-top: 20px;
   margin-bottom: 150px;
 }
+.header__logo {
+  cursor: pointer;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
