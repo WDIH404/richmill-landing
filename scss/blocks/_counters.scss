@@ -21,11 +21,12 @@
   background-color: #fafcff;
   &_items {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
     .item {
       display: flex;
       align-items: center;
       width: 410px;
+      justify-content: left;
       &__image {
         padding: 20px;
         background-color: #fff2f2;
