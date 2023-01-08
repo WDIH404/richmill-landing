@@ -4,11 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    &__item {
-    }
     &__image {
       margin-bottom: 25px;
       position: relative;
+      width: 100%;
       box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.03);
       img {
         border-radius: 12px;
@@ -46,6 +45,7 @@
     .small {
       .cards {
         &__image {
+          width: 100%;
           img {
             width: 300px;
             height: 220px;

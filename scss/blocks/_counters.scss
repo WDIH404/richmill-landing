@@ -25,7 +25,8 @@
     .item {
       display: flex;
       align-items: center;
-      width: 410px;
+      max-width: 410px;
+      width: 100%;
       justify-content: left;
       &__image {
         padding: 20px;

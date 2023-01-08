@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RICHMILL - Легкий старт вашего бизнеса на маркетплейсах</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/accordion.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('');
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
           <ul class="nav">
-            <img src="./img/logo.svg" alt="Logotype" class="header__logo" />
+            <div class="logo">
+              <img src="/img/logo__image.svg" alt="" class="logo__image" />
+              <img src="/img/logo__text.svg" alt="" class="logo__text" />
+            </div>
             <li><a href="#about" class="nav__link">Преимущества</a></li>
             <li><a href="#how_it_works" class="nav__link">Как это работает?</a></li>
             <li><a href="#advantages" class="nav__link">Что мы значим?</a></li>
@@ -368,7 +381,7 @@
           <div class="cards">
             <div class="cards__item">
               <div class="cards__image">
-                <img src="/img/big_photo.png" alt="" />
+                <img src="/img/Julia.JPG" alt="" />
                 <div class="cards__tag">Исполнительный директор (CEO)</div>
               </div>
               <h4 class="cards__title">Юлия Армянова</h4>
@@ -377,7 +390,7 @@
             </div>
             <div class="cards__item">
               <div class="cards__image">
-                <img src="/img/big_photo.png" alt="" />
+                <img src="/img/Oleg.jpg" alt="" />
                 <div class="cards__tag">Технический директор (CTO)</div>
               </div>
               <h4 class="cards__title">Олег Дамбаев</h4>
@@ -386,7 +399,7 @@
             </div>
             <div class="cards__item">
               <div class="cards__image">
-                <img src="/img/big_photo.png" alt="" />
+                <img src="/img/Ksew.jpg" alt="" />
                 <div class="cards__tag">Коммерческий директор (CCO)</div>
               </div>
               <h4 class="cards__title">Ксения Жданова</h4>
@@ -395,7 +408,7 @@
             </div>
             <div class="cards__item small">
               <div class="cards__image">
-                <img src="/img/big_photo.png" alt="" />
+                <img src="/img/Anna.jpg" alt="" />
                 <div class="cards__tag">Продакт-менеджер</div>
               </div>
               <h4 class="cards__title">Анна Дубянская</h4>
@@ -433,11 +446,11 @@
           <div class="description">
             И начинай зарабатывать невменяемые суммы с первого дня своего старта
           </div>
-          <form action="" class="request">
-            <input type="text" class="input" placeholder="Имя" />
-            <input type="text" class="input" placeholder="Номер телефона" />
-            <button class="button button-primary">Присоединиться</button>
-          </form>
+          <div class="request">
+            <input type="text" class="input" id="name" placeholder="Имя" />
+            <input type="text" class="input" id="phone" placeholder="Номер телефона" />
+            <button class="button button-primary" onclick="sendMail()">Присоединиться</button>
+          </div>
           <div class="alert">
             * Нажимая на кнопку «Присоединиться», вы соглашаетесь на обработку персональных данных
           </div>
@@ -448,12 +461,11 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="nav">
-            <img src="./img/logo.svg" alt="Logotype" class="header__logo" />
-            <li><a href="" class="nav__link">О сервисе</a></li>
-            <li><a href="" class="nav__link">Как это работает?</a></li>
-            <li><a href="" class="nav__link">Что мы значим для бизнеса?</a></li>
-            <li><a href="" class="nav__link">FAQ</a></li>
-            <li><a href="" class="nav__link">Наша команда</a></li>
+            <li><a href="#about" class="nav__link">Преимущества</a></li>
+            <li><a href="#how_it_works" class="nav__link">Как это работает?</a></li>
+            <li><a href="#advantages" class="nav__link">Что мы значим?</a></li>
+            <li><a href="#faq" class="nav__link">FAQ</a></li>
+            <li><a href="#team" class="nav__link">Наша команда</a></li>
           </div>
           <span class="copyright">©RICHMILL, 2023</span>
         </div>

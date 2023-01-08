@@ -38,6 +38,11 @@
       display: flex;
       gap: 40px;
       align-items: center;
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
       &__link {
         color: #272d4e;
         font-weight: 500;

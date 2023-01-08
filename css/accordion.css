@@ -73,3 +73,13 @@
   color: #ff5555;
   margin-bottom: 20px;
 }
+
+
+@media (max-width: 600px) {
+  .accordionjs .acc_section .acc_head {
+    font-size: 22px;
+  }
+  .accordionjs .acc_section.acc_active > .acc_content {
+    font-size: 15px;
+  }
+}
